@@ -1,0 +1,5 @@
+name: 'xmonPaySign'
+version: '1.0.0'
+authors: [Xmon &lt;xmon@t.plgt;]
+main: cf.xmon.paysign.Plugin
+api-version: '1.14'
