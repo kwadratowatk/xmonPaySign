@@ -11,6 +11,7 @@ import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Sign;
 import org.bukkit.block.data.*;
+import org.bukkit.block.data.type.Switch;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -70,6 +71,8 @@ public class PlayerClickEvent implements Listener {
                                         b.setBlockData(blockData);
                                     }
                                     boolean finalT = t;
+                                    Switch button = (Switch) b;
+                                    button.setPowered(true);
                                     /*
                                     Powerable blockdata4 = (Powerable) b.getBlockData();
                                     blockdata4.setPowered(true);
